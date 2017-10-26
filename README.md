@@ -11,8 +11,9 @@ For versions compatible with ActionHero versions prior to `18.0.0`, use version 
 ## Setup
 
 - Install this plugin: `npm install ah-sequelize-plugin --save`
-- Link the plugin: `npm run actionhero link -- --name ah-sequelize-plugin`
 - Add sequelize package: `npm install sequelize --save`
+- Add the plugin to `config/plugins.js`
+  - `'ah-sequelize-plugin': { path: __dirname + '/../node_modules/ah-sequelize-plugin' }`
 
 ### Add supported database packages
 - MySQL: `npm install mysql2 --save`
